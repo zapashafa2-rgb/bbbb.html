@@ -8,7 +8,6 @@ html,body{
     overflow-x: hidden;
 }
 
-@media (max-width:768px){
 .PORTO{
     background-image:url(usi.jpeg);
     background-size:cover;
@@ -122,5 +121,4 @@ button:hover{
 button:active{
     transform:translateY(0) scale(.95);
     box-shadow:0 3px 8px rgba(0,0,0,.3);
-}
 }
