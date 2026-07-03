@@ -11,7 +11,7 @@ html,body{
     background-image:url(usi.jpeg);
     background-size:cover;
     background-position:center;
-    width:100vw;
+    min-width:100vw;
     min-height:100vh;
     animation:bgZoom 1.5s ease;
 }
