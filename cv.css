@@ -1,0 +1,120 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    background-color: rgb(5, 5, 226);
+    padding:40px;
+
+}
+
+.cv {
+    width:850px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+    margin:40px auto;
+}
+
+.isi{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:30px;
+}
+.tentang {
+    animation:muncul 7s ease;
+    width:70%;
+}
+.tentang h2{
+    margin-bottom:15px;
+}
+.tentang ul{
+    list-style: none;
+    margin-left:20px;
+    line-height:30px;
+}
+@keyframes muncul{
+    from{
+        opacity:0;
+        transform:translateY(80px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.ringkasan,
+.pendidikan,
+.pengalaman,
+.skill{
+    margin-top:25px;
+    line-height:28px;
+    animation:muncul 7s ease;
+}
+@keyframes muncul{
+    from{
+        opacity:0;
+        transform:translateY(80px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+h4{
+    margin-bottom:10px;
+    color:#333;
+}
+.foto{
+    animation:muncul 7s ease;
+}
+@keyframes muncul{
+    from{
+        opacity:0;
+        transform:translateY(80px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+.foto img{
+    width:150px;
+    border-radius:15px;
+}
+.tombol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#222;
+    color:white;
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+button:hover{
+    transform:translateY(-5px) scale(1.08);
+    background:orangered;
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+}
+button:active{
+    transform:translateY(0) scale(.95);
+    box-shadow:0 3px 8px rgba(0,0,0,.3);
+}
+button:hover{
+    background:#444;
+}
+
