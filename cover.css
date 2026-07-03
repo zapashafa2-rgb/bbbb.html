@@ -1,16 +1,20 @@
 html,body{
     padding:0;
     margin: 0;
+    width: 100vw;
+    height: 100vh;
     box-sizing: border-box;
     font-family: sans-serif;
     overflow-x: hidden;
 }
 
-
+@media (max-width:768px){
 .PORTO{
     background-image:url(usi.jpeg);
     background-size:cover;
     background-position:center;
+    width:100vw;
+    min-height:100vh;
     animation:bgZoom 1.5s ease;
 }
 @keyframes bgZoom{
@@ -50,7 +54,7 @@ html,body{
     justify-content:space-around;
     align-items:center;
     padding: 0 80px;
-    gap: 80px;
+    gap: 20px;
 }
 .tentang{
     width:250px;
@@ -120,6 +124,4 @@ button:active{
     transform:translateY(0) scale(.95);
     box-shadow:0 3px 8px rgba(0,0,0,.3);
 }
-button:hover{
-    background:#444;
 }
