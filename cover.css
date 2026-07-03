@@ -57,7 +57,7 @@ html,body{
     gap: 80px;
 }
 .tentang{
-    width:25%;
+    width:250px;
     background:#ffffff;
     padding:25px;
     border-radius:15px;
@@ -100,7 +100,7 @@ html,body{
 }
 
 .foto img{
-    width:50%px;
+    width:50px;
     border-radius:15px;
 }
 
