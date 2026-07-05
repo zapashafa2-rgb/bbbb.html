@@ -69,10 +69,30 @@
 </div>
 </section>
 <div class="tombol">
-<a href="index.html">
     <button onclick="kembali()"> GO BACK</button>
-</a>
 </div>
 <script src="portal.js"></script>
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h2>Selamat Datang 👋</h2>
+        <p>Di dalam website saya.</p>
+        <button onclick="tutupPopup()">Tutup</button>
+    </div>
+</div>
+<div class="pop" id="pop">
+    <div class="pop-content">
+        <h2>Terima Kasih 👋</h2>
+        <p>
+            Terima kasih telah mengunjungi website portofolio saya.
+        </p>
+        <p>
+            Apakah Anda Yakin ingin kembali ke halaman utama.
+        </p>
+        <div class="btn-pop">
+            <button onclick="lanjut()">Ya</button>
+            <button onclick="batal()">Tidak</button>
+        </div>
+    </div>
+</div>
 </body>   
 </html>

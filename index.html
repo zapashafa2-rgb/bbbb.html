@@ -8,7 +8,7 @@
 
 <body>
 <div class="overlay">
-    <h1> <span style="color:black">SELAMAT DATANG!!!! Semoga harimu menyenangkan</span>
+    <h1> <span style="color:white">SELAMAT DATANG!!!! Semoga harimu menyenangkan</span>
     </h1>
 <section class="PORTO">
     <div class="isi">
@@ -16,9 +16,7 @@
         <h2> Tentang Saya</h2>
         <P><b>Saya adalah mahasiswa yang memiliki minat besar di bidang pemrograman.saat ini saya sedang mempelajari HTML,CSS,JavaScript dan C++,sebagai dasar untuk menjadi seorang developer.Untuk informasi lebih lanjut mengenai pengalaman,proyek,serta kemampuan yang saya miliki,silahkan melihat melalui CV saya di bawah ini</b> 
         </P>
-        <a href="portofolio.html">
             <button onclick="porto()">Klik Disini</button>
-        </a>
     </div>
     <div class="foto">
          <img src="za.jpeg" alt="img">
@@ -27,5 +25,27 @@
 </div>
 </section>
 <script src="portal.js"></script>
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h2>Halo Semua 👋</h2>
+        <p>Terima kasih sudah mengunjungi website saya.</p>
+        <button onclick="tutupPopup()">Tutup</button>
+    </div>
+</div>
+<div class="pop" id="pop">
+    <div class="pop-content">
+        <h2>Terima Kasih 👋</h2>
+        <p>
+            Terima kasih telah mengunjungi website portofolio saya.
+        </p>
+        <p>
+            Silahkan lanjut ke halaman portofolio untuk melihat proyek dan informasi lebih lengkap.
+        </p>
+        <div class="btn-pop">
+            <button onclick="lanjut()">Ya</button>
+            <button onclick="batal()">Tidak</button>
+        </div>
+    </div>
+</div>
 </body> 
 </html>

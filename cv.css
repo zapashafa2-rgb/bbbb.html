@@ -6,8 +6,7 @@
 }
 
 body{
-    background:#f5f5f5;
-    background-color: rgb(5, 5, 226);
+    background-image:url(galaxy.png);
     padding:40px;
 
 }
@@ -17,6 +16,13 @@ section {
     background:white;
     padding:40px;
     border-radius:20px;
+    background: linear-gradient(
+    180deg,
+    #050816,
+    #0B0F3B,
+    #3F2B96,
+    #6A4CFF
+    );
     box-shadow:0 0 20px rgba(0,0,0,.3);
     margin:40px auto;
 }
@@ -26,10 +32,15 @@ section {
     justify-content:space-between;
     align-items:flex-start;
     margin-bottom:30px;
+    gap: 20px;
 }
 .tentang {
     animation:muncul 7s ease;
-    width:70%;
+    width:100%;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
 }
 .tentang h2{
     margin-bottom:15px;
@@ -55,6 +66,10 @@ section {
 .skill{
     margin-top:25px;
     line-height:28px;
+    border-radius: 15px;
+    background: white;
+    padding: 20px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
     animation:muncul 7s ease;
 }
 @keyframes muncul{
@@ -86,8 +101,17 @@ h4{
 
 }
 .foto img{
-    width:150px;
+    width:180px;
     border-radius:15px;
+    transition:0.3s ease;
+    cursor:pointer;
+}
+.foto img:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+.foto img:active{
+    transform:scale(0.95);
 }
 .tombol{
     display: flex;
@@ -117,4 +141,69 @@ button:active{
 button:hover{
     background:#444;
 }
-
+.popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+.popup-content{
+    width:320px;
+    background: linear-gradient(
+    180deg,
+    #050816,
+    #0B0F3B,
+    #3F2B96,
+    #6A4CFF
+    );
+    color: white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    animation:muncul .4s ease;
+}
+@keyframes muncul{
+    from{
+        opacity:0;
+        transform:scale(.7);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+.pop{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.6);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+.pop-content{
+    width:350px;
+    background: linear-gradient(
+    180deg,
+    #050816,
+    #0B0F3B,
+    #3F2B96,
+    #6A4CFF
+    );
+    color: white;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+}
+.btn-pop{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
