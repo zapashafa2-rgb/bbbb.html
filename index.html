@@ -8,9 +8,14 @@
 
 <body>
 <div class="overlay">
-    <h1> <span style="color:white">SELAMAT DATANG!!!! Semoga harimu menyenangkan</span>
-    </h1>
-<section class="PORTO">
+    <div class="home" id="home">
+        <p onclick="Home()">Home</p>
+    </div>
+    <div class="about" id="about">
+            <p onclick="Aboutme()">About Me</p>
+    </div>
+</div>
+<section>
     <div class="isi">
     <div class="tentang">
         <h2> Tentang Saya</h2>
@@ -22,14 +27,12 @@
          <img src="za.jpeg" alt="img">
     </div>
 </div>
-</div>
 </section>
-<script src="portal.js"></script>
 <div class="popup" id="popup">
     <div class="popup-content">
         <h2>Halo Semua 👋</h2>
         <p>Terima kasih sudah mengunjungi website saya.</p>
-        <button onclick="tutupPopup()">Tutup</button>
+        <button onclick="tutupHalaman()">Tutup</button>
     </div>
 </div>
 <div class="pop" id="pop">
@@ -47,5 +50,6 @@
         </div>
     </div>
 </div>
+<script src="portal.js"></script>
 </body> 
 </html>

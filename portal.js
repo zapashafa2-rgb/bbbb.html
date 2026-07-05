@@ -1,11 +1,17 @@
-function bukaPopup(){
+function bukaHalaman(){
 document.getElementById("popup").style.display="flex";
 }
-function tutupPopup(){
+function tutupHalaman(){
     document.getElementById("popup").style.display="none";
 }
 window.onload=function(){
-    bukaPopup();
+    bukaHalaman();
+}
+function Aboutme(){
+    window.location.href="about.html";
+}
+function Home(){
+    window.location.href="index.html";
 }
 function porto(){
     document.getElementById("pop").style.display="flex";
@@ -17,23 +23,4 @@ function batal(){
     document.getElementById("pop").style.display="none";
 }
 
-
-function bukaPopup(){
-document.getElementById("melayang").style.display="flex";
-}
-function tutupPopup(){
-    document.getElementById("melayang").style.display="none";
-}
-window.onload=function(){
-    bukaPopup();
-}
-function kembali(){
-    document.getElementById("jendela").style.display="flex";
-}
-function lanjut(){
-    window.location.href="index.html";
-}
-function batal(){
-    document.getElementById("jendela").style.display="none";
-}
 

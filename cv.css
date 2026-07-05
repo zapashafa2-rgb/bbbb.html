@@ -41,7 +41,17 @@ section {
     padding: 30px;
     border-radius: 15px;
     box-shadow:0 0 20px rgba(0,0,0,.3);
+    transition:0.3s ease;
+    cursor:pointer;
 }
+.tentang:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 25px rgba(0,0,0,.35);
+}
+.tentang:active{
+    transform:scale(0.98);
+}
+
 .tentang h2{
     margin-bottom:15px;
 }
@@ -71,6 +81,21 @@ section {
     padding: 20px;
     box-shadow:0 0 20px rgba(0,0,0,.3);
     animation:muncul 7s ease;
+    transition:0.3s ease;
+    cursor:pointer;
+}
+.ringkasan:hover,
+.pendidikan:hover,
+.pengalaman:hover,
+.skill:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 25px rgba(0,0,0,.35);
+}
+.ringkasan:active,
+.pendidikan:active,
+.pengalaman:active,
+.skill:active{
+    transform:scale(0.98);
 }
 @keyframes muncul{
     from{
@@ -153,7 +178,7 @@ button:hover{
     align-items:center;
     z-index:999;
 }
-.melayang-content{
+.tampilan-content{
     width:320px;
     background: linear-gradient(
     180deg,
