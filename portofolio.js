@@ -1,19 +1,16 @@
-function bukaJendela(){
-document.getElementById("melayang").style.display="flex";
-}
-function tutupJendela(){
-    document.getElementById("melayang").style.display="none";
-}
-window.onload=function(){
-    bukaJendela();
-}
-function kembali(){
-    document.getElementById("jendela").style.display="flex";
-}
-function lanjutHalaman(){
-    window.location.href="index.html";
-}
-function batalHalaman(){
-    document.getElementById("jendela").style.display="none";
-}
+const fade = document.querySelectorAll(".fade");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } 
+    });
+}, {
+    threshold: 0.2
+});
+fade.forEach((el) => {
+    observer.observe(el);
+});
 

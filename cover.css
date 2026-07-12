@@ -3,7 +3,13 @@ html,body{
     margin: 0;
     width:100vw;
     height:100vh;
-    background-image:url(galaxy.png);
+    background: linear-gradient(
+        135deg,
+        #020617 0%,
+        #0F172A 50%,
+        #1E3A8A 90%,
+        #1E40AF 100%
+    );
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -20,35 +26,22 @@ html,body{
     justify-content:center;
     gap:35px;
 }
-.home,
-.about {
+.overlay p a{
+    text-decoration:none;
     color: white;
     padding: 5px;
     font-size: 20px;
-    animation:turun 5s ease;
+    animation:muncul 5s ease;
     transition:0.3s ease;
     cursor:pointer;
 }
-.home:hover,
-.about:hover{
+p:hover{
     transform:translateY(-8px);
 }
-.home:active,
-.about:active{
+p:active{
     transform:scale(0.98);
 }
 
-@keyframes turun{
-    from{
-        opacity:0;
-        transform:translateY(-100px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-
-}
 .isi {
     width:100%;
     min-height:80vh;
@@ -60,7 +53,7 @@ html,body{
 }
 .tentang{
     width:400px;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.2);
@@ -68,7 +61,7 @@ html,body{
     color: white;
     padding:20px;
     box-shadow:0 0 15px rgba(0,0,0,.3);
-    animation:muncul 7s ease;
+    animation:muncul 4s ease;
     transition:0.3s ease;
     cursor:pointer;
 }
@@ -82,7 +75,7 @@ html,body{
 @keyframes muncul{
     from{
         opacity:0;
-        transform:translateY(80px);
+        transform:translateY(60px);
     }
     to{
         opacity:1;
@@ -148,65 +141,39 @@ button:active{
     box-shadow:0 3px 8px rgba(0,0,0,.3);
 }
 @media (max-width:768px){
-
+    .overlay{
+        gap:15px;
+        flex-wrap:wrap;
+        padding:15px 0;
+    }
+    .overlay p a{
+        font-size:16px;
+    }
     .isi{
         flex-direction:column-reverse;
         justify-content:center;
-        padding:20px;
+        align-items:center;
+        width:calc(100% - 40px);
+        margin:15px auto;
+        padding:30px 20px;
+        gap:30px;
     }
-
     .tentang{
-        width:90%;
+        width:100%;
+        max-width:340px;
+        margin:0;
+        box-sizing:border-box;
     }
-
     .foto{
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+    .foto img{
         width:220px;
     }
-
-    .overlay h1{
-        font-size:18px;
-        padding:10px;
-    }
-
     button{
         width:100%;
-    }
-}
-.popup{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.6);
-    display:none;
-    justify-content:center;
-    align-items:center;
-    z-index:999;
-}
-.popup-content{
-    width:320px;
-    background: linear-gradient(
-    180deg,
-    #050816,
-    #0B0F3B,
-    #3F2B96,
-    #6A4CFF
-    );
-    color: white;
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
-    animation:muncul .4s ease;
-}
-@keyframes muncul{
-    from{
-        opacity:0;
-        transform:scale(.7);
-    }
-    to{
-        opacity:1;
-        transform:scale(1);
     }
 }
 .pop{

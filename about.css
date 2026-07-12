@@ -1,14 +1,18 @@
 .html,body{
     padding:0;
     margin: 0;
+    overflow-x:hidden;
     box-sizing: border-box;
     font-family: sans-serif;
-    width: 100vw;
-    height: 100vh;
-    background-image:url(galaxy.png);
-
+    background: linear-gradient(
+        135deg,
+        #000814,
+        #001D3D,
+        #003566,
+        #001233
+    );
 }
-
+/*home*/
 section {
     width:850px;
     background:white;
@@ -28,24 +32,21 @@ section {
     justify-content:center;
     gap:35px;
 }
-.home,
-.about {
+p a{
     color: white;
+    text-decoration:none;
     padding: 5px;
     font-size: 20px;
-    animation:turun 5s ease;
     transition:0.3s ease;
     cursor:pointer;
 }
-.home:hover,
-.about:hover{
+p:hover{
     transform:translateY(-8px);
 }
-.home:active,
-.about:active{
+p:active{
     transform:scale(0.98);
 }
-
+/**/
 .isi{
     display:flex;
     justify-content:center;
@@ -64,7 +65,6 @@ section {
     background:white ;
     padding: 15px;
     box-shadow:0 0 20px rgba(0,0,0,.3);
-    animation:muncul 7s ease;
     transition:0.3s ease;
     cursor:pointer;
 }
@@ -73,7 +73,7 @@ section {
 .alamat:hover,
 .pengalaman:hover,
 .portofolio:hover{
-    transform:translateY(-8px);
+    transform:scale(1.05);
     box-shadow:0 15px 25px rgba(0,0,0,.35);
 }
 .tentang:active,
@@ -100,32 +100,12 @@ h4{
     background: white;
     padding: 10px;
     box-shadow:0 0 20px rgba(0,0,0,.3);
-    animation:muncul 7s ease;
 }
-@keyframes muncul{
-    from{
-        opacity:0;
-        transform:translateY(80px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+.kontak{
+    display:flex;
+    gap:20px;
 }
-.foto{
-    animation:muncul 7s ease;
-}
-@keyframes muncul{
-    from{
-        opacity:0;
-        transform:translateY(80px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-
-}
+/*foto*/
 .foto img{
     width:180px;
     border-radius:15px;
@@ -138,4 +118,63 @@ h4{
 }
 .foto img:active{
     transform:scale(0.95);
+}
+/**/
+.fade{
+    opacity:0;
+    transform:translateY(70px);
+    transition:all 1.2s ease;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+/**/
+@media (max-width:768px){
+
+    section{
+        width:calc(100% - 40px);
+        padding:20px;
+        margin:20px auto;
+        box-sizing:border-box;
+    }
+
+    .overlay{
+        gap:15px;
+        flex-wrap:wrap;
+        padding-bottom:15px;
+    }
+
+    .overlay p a{
+        font-size:16px;
+    }
+
+    .isi{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .foto{
+        display:flex;
+        justify-content:center;
+    }
+
+    .foto img{
+        width:220px;
+    }
+
+    .tentang,
+    .ringkasan,
+    .alamat,
+    .pengalaman,
+    .portofolio,
+    .nama,
+    .rumah,
+    .ttl,
+    .tentang-saya{
+        width:100%;
+        box-sizing:border-box;
+    }
 }

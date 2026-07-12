@@ -7,9 +7,18 @@
 </head> 
 
 <body>
+<div class="overlay">
+    <p><a href=index.html> Home</a></p>
+    <p><a href=about.html> About Me</a></p>
+    <p><a href=portofolio.html> Project</a></p>
+</div>
+
 <section>
 <div class="isi">
-    <div class="tentang">
+    <div class="foto fade">
+         <img src="za.jpeg" alt="img">
+    </div>
+    <div class="tentang fade">
         <h2> Zaldy Aditya Pashafa</h2>
         <ul>
             <li>TTL:Bekasi,16 Oktober 2007</li>
@@ -17,11 +26,8 @@
             <li>E-mail:zapashafa@gmail.com</li>
         </ul>
     </div>
-    <div class="foto">
-         <img src="za.jpeg" alt="img">
-    </div>
 </div>
-<div class="ringkasan">
+<div class="ringkasan fade">
     <h4> <u>RINGKASAN</u></h4>
         <P>
         Saya adalah Mahasiswa aktif berlatar belakang Teknik Komputer dan Jaringan yang memiliki
@@ -30,14 +36,14 @@
         jawab terhadap pekerjaan.
         </P>
 </div>
-<div class="pendidikan">
+<div class="pendidikan fade">
     <h4><u>PENDIDIKAN</u></h4>
     <ul>
         <li>SMK Dinamika Insan Mandiri - Jurusan Teknik Komputer dan Jaringan(2022-2025) </li>
         <li>Universitas Sains Indonesia- Fakultas Ilmu Komputer-Teknik Informatika (2025-Sekarang)</li>
     </ul>
 </div>
-<div class="pengalaman">
+<div class="pengalaman fade">
     <h4><u>PENGALAMAN</u></h4>
     <h5>PRAKTIK KERJA LAPANGAN- CV. MEDIA ILMU INDONESIA September 2023-Desember 2023</h5>
     <ul>
@@ -48,7 +54,7 @@
         <li>Bekerja sama dengan tim dan mengikuti arahan kerja dgn baik</li>
     </ul>
 </div>
-<div class="skill">
+<div class="skill fade">
     <h4><u>KEMAMPUAN</u></h4>
     <h4>Hard Skill</h4>
     <ul>
@@ -68,29 +74,11 @@
 </ul>   
 </div>
 </section>
-<div class="tombol">
-    <button onclick="kembali()"> GO BACK</button>
-</div>
 <div class="melayang" id="melayang">
     <div class="tampilan-content">
         <h2>Selamat Datang 👋</h2>
         <p>Di dalam website saya.</p>
         <button onclick="tutupJendela()">Tutup</button>
-    </div>
-</div>
-<div class="jendela" id="jendela">
-    <div class="jendela-content">
-        <h2>Terima Kasih 👋</h2>
-        <p>
-            Terima kasih telah mengunjungi website portofolio saya.
-        </p>
-        <p>
-            Apakah Anda Yakin ingin kembali ke halaman utama.
-        </p>
-        <div class="jendela-pop">
-            <button onclick="lanjutHalaman()">Ya</button>
-            <button onclick="batalHalaman()">Tidak</button>
-        </div>
     </div>
 </div>
 <script src="portofolio.js"></script>

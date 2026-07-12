@@ -3,45 +3,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title> About Zaldy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="about.css">
 </head> 
 
 <body>
-<div class="overlay">
-    <div class="home">
-        <p onclick="Home()">Home</p>
-    </div>
-    <div class="about">
-        <p onclick="Aboutme()">About Me</p>
-    </div>
+<div class="overlay fade">
+        <p><a href=index.html> Home</a></p>
+        <p><a href=about.html> About Me</a></p>
+        <p><a href=portofolio.html> Project</a></p>
 </div>
 <section>
-<div class="isi">
+<div class="isi fade">
     <div class="foto">
          <img src="za.jpeg" alt="img">
     </div>
 </div>
-<div class="tentang">
+<div class="tentang fade">
         <h2> Nama</h2>
-        <div class="nama">
+        <div class="nama fade">
             <p>Zaldy Aditya Pashafa</p>
         </div>
 </div>
-<div class="alamat">
+<div class="alamat fade">
     <h4>Alamat</h4>
-   <div class="rumah">
+   <div class="rumah fade">
     <p> Jl.H.Anwar No.13</p>
    </div>
 </div>
-<div class="pengalaman">
+<div class="pengalaman fade">
     <h4>Tempat Tanggal Lahir</h4>
-    <div class="ttl">
+    <div class="ttl fade">
         <p>Bekasi,16 Oktober 2007</p>
     </div>
 </div>
-<div class="ringkasan">
+<div class="ringkasan fade">
     <h4> TENTANG SAYA</h4>
-    <div class="tentang-saya">
+    <div class="tentang-saya fade">
         <P>
         Saya adalah Mahasiswa aktif berlatar belakang Teknik Komputer dan Jaringan yang memiliki
         kemampuan komunikasi, kerja tim, dan cepat beradaptasi. Memiliki ketertarikan di bidang
@@ -50,11 +48,19 @@
         </P>
     </div>
 </div>
-<div class="portofolio">
-    <h4>CV</h4>
-    <a href="portofolio.html">
-       <p>CV Zaldy</p> 
-    </a>
+<div class="portofolio fade">
+    <h4>Contact</h4>
+    <div class="kontak fade">
+                <a href="https://www.instagram.com/zadityap/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/6285210346138" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:zapashafa@gmail.com">
+                <i class="fa-brands fa-envelope"></i>
+                </a>
+    </div>
 </div>
 </section>
 <script src="about.js"></script>
