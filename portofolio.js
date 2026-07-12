@@ -1,3 +1,12 @@
+function bukaJendela(){
+document.getElementById("melayang").style.display="flex";
+}
+function tutupJendela(){
+    document.getElementById("melayang").style.display="none";
+}
+window.onload=function(){
+    bukaJendela();
+}
 const fade = document.querySelectorAll(".fade");
 
 const observer = new IntersectionObserver((entries) => {
@@ -13,4 +22,5 @@ const observer = new IntersectionObserver((entries) => {
 fade.forEach((el) => {
     observer.observe(el);
 });
+
 
